@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.machineFile org.eventb.core.configuration="org.eventb.core.fwd" org.eventb.core.generated="false" org.eventb.texttools.text_lastmodified="1584631228769" org.eventb.texttools.text_representation="machine Building&#10;&#10;sees BuildingContext&#10;variables register in out&#10;invariants&#10;&#9;@inv1: register ⊆ USER&#10;&#9;@inv2: register = in ∪ out&#10;&#9;@inv3: in ∩ in ⊆ ∅&#10;&#10;events&#10;&#9;event initialisation&#10;&#9;then&#10;&#9;&#9;@init-in: in ≔ ∅&#10;&#9;&#9;@init-out: out ≔ ∅&#10;&#9;&#9;@init-register: register ≔ ∅&#10;&#9;end&#10;&#10;&#9;event Enter&#10;  &#9;any s where&#10;  &#9;&#9;@grd1: s ∈ out&#10;  &#9;then&#10;  &#9; &#9;@act1: in ≔ in ∪ {s}&#10;  &#9; &#9;@act2: out ≔ out ∖ {s}&#10; &#9;end&#10;&#10;  &#9;event Leave&#10;  &#9;any s where&#10;  &#9;&#9;@grd1: s ∈ in&#10;  &#9;then&#10;  &#9;&#9;@act1: out ≔ out ∪ {s}&#10;  &#9; &#9;@act2: in ≔ in ∖ {s}&#10;  end&#10;&#10;  event NewUser&#10;  &#9;any s where&#10;  &#9;&#9;@grd1: s ∈ (User ∖ register)&#10;&#9;then&#10;  &#9; &#9;@act1: register ≔ register ∪ {s}&#10;  &#9; &#9;@act2: out ≔ out ∪ {s}&#10;  end&#10;end&#10;" version="5">
+<org.eventb.core.seesContext name="_KqYJ0Gn1EeqJ5psMz6RiJA" org.eventb.core.target="BuildingContext"/>
+<org.eventb.core.variable name="_ei6NkGnAEeqRMpc_4c-5Xg" org.eventb.core.generated="false" org.eventb.core.identifier="register"/>
+<org.eventb.core.variable name="_ei60oGnAEeqRMpc_4c-5Xg" org.eventb.core.generated="false" org.eventb.core.identifier="in"/>
+<org.eventb.core.variable name="_ei7bsGnAEeqRMpc_4c-5Xg" org.eventb.core.generated="false" org.eventb.core.identifier="out"/>
+<org.eventb.core.event name="_KqfekGn1EeqJ5psMz6RiJA" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.generated="false" org.eventb.core.label="initialisation">
+<org.eventb.core.action name="_ei4YYGnAEeqRMpc_4c-5Xg" org.eventb.core.assignment="in ≔ ∅" org.eventb.core.generated="false" org.eventb.core.label="init-in;"/>
+<org.eventb.core.action name="_ei4_cGnAEeqRMpc_4c-5Xg" org.eventb.core.assignment="out ≔ ∅" org.eventb.core.generated="false" org.eventb.core.label="init-out;"/>
+<org.eventb.core.action name="_ei5mgGnAEeqRMpc_4c-5Xg" org.eventb.core.assignment="register ≔ ∅" org.eventb.core.generated="false" org.eventb.core.label="init-register;"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="_ei_tIGnAEeqRMpc_4c-5Xg" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.generated="false" org.eventb.core.label="Enter">
+<org.eventb.core.parameter name="_ejA7QGnAEeqRMpc_4c-5Xg" org.eventb.core.generated="false" org.eventb.core.identifier="s"/>
+<org.eventb.core.guard name="_ejBiUGnAEeqRMpc_4c-5Xg" org.eventb.core.generated="false" org.eventb.core.label="grd1;" org.eventb.core.predicate="s ∈ out"/>
+<org.eventb.core.action name="_ejCJYGnAEeqRMpc_4c-5Xg" org.eventb.core.assignment="in ≔ in ∪ {s}" org.eventb.core.generated="false" org.eventb.core.label="act1;"/>
+<org.eventb.core.action name="_ejCwcGnAEeqRMpc_4c-5Xg" org.eventb.core.assignment="out ≔ out ∖ {s}" org.eventb.core.generated="false" org.eventb.core.label="act2;"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="_ejD-kGnAEeqRMpc_4c-5Xg" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.generated="false" org.eventb.core.label="Leave">
+<org.eventb.core.parameter name="_ejEloGnAEeqRMpc_4c-5Xg" org.eventb.core.generated="false" org.eventb.core.identifier="s"/>
+<org.eventb.core.guard name="_ejFMsGnAEeqRMpc_4c-5Xg" org.eventb.core.generated="false" org.eventb.core.label="grd1;" org.eventb.core.predicate="s ∈ in"/>
+<org.eventb.core.action name="_ejFzwGnAEeqRMpc_4c-5Xg" org.eventb.core.assignment="out ≔ out ∪ {s}" org.eventb.core.generated="false" org.eventb.core.label="act1;"/>
+<org.eventb.core.action name="_ejHB4GnAEeqRMpc_4c-5Xg" org.eventb.core.assignment="in ≔ in ∖ {s}" org.eventb.core.generated="false" org.eventb.core.label="act2;"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="_ejHo8GnAEeqRMpc_4c-5Xg" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.generated="false" org.eventb.core.label="NewUser">
+<org.eventb.core.parameter name="_ejI3EGnAEeqRMpc_4c-5Xg" org.eventb.core.generated="false" org.eventb.core.identifier="s"/>
+<org.eventb.core.guard name="_ejJeIGnAEeqRMpc_4c-5Xg" org.eventb.core.generated="false" org.eventb.core.label="grd1;" org.eventb.core.predicate="s ∈ (User ∖ register)"/>
+<org.eventb.core.action name="_ejKsQGnAEeqRMpc_4c-5Xg" org.eventb.core.assignment="register ≔ register ∪ {s}" org.eventb.core.generated="false" org.eventb.core.label="act1;"/>
+<org.eventb.core.action name="_ejL6YGnAEeqRMpc_4c-5Xg" org.eventb.core.assignment="out ≔ out ∪ {s}" org.eventb.core.generated="false" org.eventb.core.label="act2;"/>
+</org.eventb.core.event>
+<org.eventb.core.invariant name="_Kq_N0Gn1EeqJ5psMz6RiJA" org.eventb.core.generated="false" org.eventb.core.label="inv1;" org.eventb.core.predicate="register ⊆ USER"/>
+<org.eventb.core.invariant name="_KrBqEGn1EeqJ5psMz6RiJA" org.eventb.core.generated="false" org.eventb.core.label="inv2;" org.eventb.core.predicate="register = in ∪ out"/>
+<org.eventb.core.invariant name="_KrBqEWn1EeqJ5psMz6RiJA" org.eventb.core.generated="false" org.eventb.core.label="inv3;" org.eventb.core.predicate="in ∩ in ⊆ ∅"/>
+</org.eventb.core.machineFile>
