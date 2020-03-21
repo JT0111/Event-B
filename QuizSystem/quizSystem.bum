@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.machineFile org.eventb.core.configuration="org.eventb.core.fwd" org.eventb.core.generated="false" org.eventb.texttools.text_lastmodified="1584800239587" org.eventb.texttools.text_representation="machine quizSystem&#10;sees c0&#10;variables&#10;user //set of registered users&#10;name&#10;player //sets of users starting a quiz&#10;creator&#10;quiz&#10;question&#10;number&#10;answers&#10;correctAnswer&#10;&#10;invariants&#10;@inv1: user ⊆ USER&#10;@inv2: creator ⊆ user&#10;@inv3: name ∈ user ⤖ NAME //every user has exactly one, unique assigned name&#10;@inv4: quiz ∈ creator ↔ QUIZ&#10;@inv5: question ∈ QUIZ ↔ question //not sure about the arrow&#10;@inv6: player ∈ QUIZ ↔ user //user can take part in multiple quizes and multiple players can take part in one quiz&#10;@inv7: number ∈ QUIZ ⤖ NUMBER&#10;&#10;events&#10;  event INITIALISATION&#10;  end&#10;end&#10;" version="5">
+<org.eventb.core.seesContext name="_rLvtsGt-Eeq0AenwOWRNzA" org.eventb.core.target="c0"/>
+<org.eventb.core.event name="'" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.generated="false" org.eventb.core.label="INITIALISATION"/>
+<org.eventb.core.variable name="_rLyJ8Gt-Eeq0AenwOWRNzA" org.eventb.core.comment="set of registered users" org.eventb.core.generated="false" org.eventb.core.identifier="user"/>
+<org.eventb.core.variable name="_rLyJ8Wt-Eeq0AenwOWRNzA" org.eventb.core.generated="false" org.eventb.core.identifier="name"/>
+<org.eventb.core.variable name="_rLyJ8mt-Eeq0AenwOWRNzA" org.eventb.core.comment="sets of users starting a quiz" org.eventb.core.generated="false" org.eventb.core.identifier="player"/>
+<org.eventb.core.variable name="_rLyJ82t-Eeq0AenwOWRNzA" org.eventb.core.generated="false" org.eventb.core.identifier="creator"/>
+<org.eventb.core.variable name="_rL0mMGt-Eeq0AenwOWRNzA" org.eventb.core.generated="false" org.eventb.core.identifier="quiz"/>
+<org.eventb.core.variable name="_rL0mMWt-Eeq0AenwOWRNzA" org.eventb.core.generated="false" org.eventb.core.identifier="question"/>
+<org.eventb.core.variable name="_rL0mMmt-Eeq0AenwOWRNzA" org.eventb.core.generated="false" org.eventb.core.identifier="number"/>
+<org.eventb.core.variable name="_rL3CcGt-Eeq0AenwOWRNzA" org.eventb.core.generated="false" org.eventb.core.identifier="answers"/>
+<org.eventb.core.variable name="_rL3CcWt-Eeq0AenwOWRNzA" org.eventb.core.generated="false" org.eventb.core.identifier="correctAnswer"/>
+<org.eventb.core.invariant name="_rL3Ccmt-Eeq0AenwOWRNzA" org.eventb.core.generated="false" org.eventb.core.label="inv1;" org.eventb.core.predicate="user ⊆ USER"/>
+<org.eventb.core.invariant name="_rL5esGt-Eeq0AenwOWRNzA" org.eventb.core.generated="false" org.eventb.core.label="inv2;" org.eventb.core.predicate="creator ⊆ user"/>
+<org.eventb.core.invariant name="_rL5esWt-Eeq0AenwOWRNzA" org.eventb.core.comment="every user has exactly one, unique assigned name" org.eventb.core.generated="false" org.eventb.core.label="inv3;" org.eventb.core.predicate="name ∈ user ⤖ NAME"/>
+<org.eventb.core.invariant name="_rL768Gt-Eeq0AenwOWRNzA" org.eventb.core.generated="false" org.eventb.core.label="inv4;" org.eventb.core.predicate="quiz ∈ creator ↔ QUIZ"/>
+<org.eventb.core.invariant name="_rL768Wt-Eeq0AenwOWRNzA" org.eventb.core.comment="not sure about the arrow" org.eventb.core.generated="false" org.eventb.core.label="inv5;" org.eventb.core.predicate="question ∈ QUIZ ↔ question"/>
+<org.eventb.core.invariant name="_rL-XMGt-Eeq0AenwOWRNzA" org.eventb.core.comment="user can take part in multiple quizes and multiple players can take part in one quiz" org.eventb.core.generated="false" org.eventb.core.label="inv6;" org.eventb.core.predicate="player ∈ QUIZ ↔ user"/>
+<org.eventb.core.invariant name="_rL-XMWt-Eeq0AenwOWRNzA" org.eventb.core.generated="false" org.eventb.core.label="inv7;" org.eventb.core.predicate="number ∈ QUIZ ⤖ NUMBER"/>
+</org.eventb.core.machineFile>

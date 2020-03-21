@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.contextFile org.eventb.core.configuration="org.eventb.core.fwd" org.eventb.core.generated="false" org.eventb.texttools.text_lastmodified="1584800305930" org.eventb.texttools.text_representation="context c0&#10;sets USER QUIZ NUMBER NAME QUESTION&#10;axioms&#10;@def-NUMBER: NUMBER=ℕ&#10;&#10;end&#10;" version="3">
+<org.eventb.core.carrierSet name="_1EKkUGt-Eeq0AenwOWRNzA" org.eventb.core.generated="false" org.eventb.core.identifier="USER"/>
+<org.eventb.core.carrierSet name="_1EKkUWt-Eeq0AenwOWRNzA" org.eventb.core.generated="false" org.eventb.core.identifier="QUIZ"/>
+<org.eventb.core.carrierSet name="_1ENAkGt-Eeq0AenwOWRNzA" org.eventb.core.generated="false" org.eventb.core.identifier="NUMBER"/>
+<org.eventb.core.carrierSet name="_1ENnoGt-Eeq0AenwOWRNzA" org.eventb.core.generated="false" org.eventb.core.identifier="NAME"/>
+<org.eventb.core.carrierSet name="_1EOOsGt-Eeq0AenwOWRNzA" org.eventb.core.generated="false" org.eventb.core.identifier="QUESTION"/>
+<org.eventb.core.axiom name="_1EOOsWt-Eeq0AenwOWRNzA" org.eventb.core.generated="false" org.eventb.core.label="def-NUMBER;" org.eventb.core.predicate="NUMBER=ℕ"/>
+</org.eventb.core.contextFile>

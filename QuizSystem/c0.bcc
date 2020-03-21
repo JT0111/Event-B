@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.scContextFile org.eventb.core.accurate="false" org.eventb.core.configuration="org.eventb.core.fwd">
+<org.eventb.core.scCarrierSet name="NAME" org.eventb.core.source="/QuizSystem/c0.buc|org.eventb.core.contextFile#c0|org.eventb.core.carrierSet#_1ENnoGt-Eeq0AenwOWRNzA" org.eventb.core.type="ℙ(NAME)"/>
+<org.eventb.core.scCarrierSet name="NUMBER" org.eventb.core.source="/QuizSystem/c0.buc|org.eventb.core.contextFile#c0|org.eventb.core.carrierSet#_1ENAkGt-Eeq0AenwOWRNzA" org.eventb.core.type="ℙ(NUMBER)"/>
+<org.eventb.core.scCarrierSet name="QUESTION" org.eventb.core.source="/QuizSystem/c0.buc|org.eventb.core.contextFile#c0|org.eventb.core.carrierSet#_1EOOsGt-Eeq0AenwOWRNzA" org.eventb.core.type="ℙ(QUESTION)"/>
+<org.eventb.core.scCarrierSet name="QUIZ" org.eventb.core.source="/QuizSystem/c0.buc|org.eventb.core.contextFile#c0|org.eventb.core.carrierSet#_1EKkUWt-Eeq0AenwOWRNzA" org.eventb.core.type="ℙ(QUIZ)"/>
+<org.eventb.core.scCarrierSet name="USER" org.eventb.core.source="/QuizSystem/c0.buc|org.eventb.core.contextFile#c0|org.eventb.core.carrierSet#_1EKkUGt-Eeq0AenwOWRNzA" org.eventb.core.type="ℙ(USER)"/>
+</org.eventb.core.scContextFile>
